@@ -47,3 +47,15 @@ INSERT INTO Message (message_id, sender_id, recipient_id, message_body)
 VALUES
   ('eeeeeee1-eeee-eeee-eeee-eeeeeeeeeee1', '11111111-1111-1111-1111-111111111111', '22222222-2222-2222-2222-222222222222', 'Hi Bob, I had a great stay at your property!'),
   ('eeeeeee2-eeee-eeee-eeee-eeeeeeeeeee2', '22222222-2222-2222-2222-222222222222', '11111111-1111-1111-1111-111111111111', 'Thanks Alice, you’re welcome anytime!');
+
+
+-- ====================================
+-- ✅ Example: Bookings
+-- ====================================
+
+SELECT 
+  u.first_name, p.name AS property, b.start_date, b.status 
+FROM Booking b
+JOIN "User" u ON b.user_id = u.user_id
+JOIN Property p ON b.property_id = p.property_id;
+
