@@ -19,3 +19,13 @@
 
 5.
    - Correlated subquery to find users who have made more than 3 bookings.
+
+# Aggregations and Window Functions
+
+## Key Concepts:
+- **GROUP BY**: Groups rows by specified columns
+- **COUNT()**: Aggregates data by counting rows
+- **RANK()**: Window function that assigns ranks with gaps
+- **OVER()**: Defines window frame for calculations
+
+Usage: Analyzing booking patterns and property popularity.
