@@ -1,9 +1,9 @@
 # SQL for Airbnb Database
-
+# joins_queries.sql
 1. 
    - Retrieves matching records from both tables  
    - Example: Bookings with their associated users  
-
+# subqueries.sql
 2. 
    - Retrieves all records from the left table with matching right table records (or NULL)  
    - Example: All properties including those without reviews  
